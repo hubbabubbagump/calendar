@@ -1,0 +1,242 @@
+html, body, #root {
+   height: 100%;
+}
+
+.calendarApp {
+   height: 100%;
+}
+
+.calendarApp .header {
+   background-color: #006edc;
+   color: white;
+   padding: 7px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.calendarApp .header p {
+   padding: 5px 12px;
+   margin: 0px;
+   vertical-align: middle;
+}
+
+.calendarApp .header .login {
+   background-color: #006edc;
+   box-shadow: none;
+}
+
+.calendarApp .header .login:hover {
+   background-color: #0055a9;
+}
+
+.calendarApp .grid {
+   margin-top: 0;
+   margin-left: 0;
+   margin-right: 0;
+   width: 100%;
+   border-bottom: 1px solid #EEE;
+   /* height: 100%; */
+}
+
+.calendarApp .grid>.grid1 {
+   border-right: 1px solid #EEE;
+   padding: 10px 0px;
+}
+
+.calendarApp .grid1 .event-button {
+   border-bottom: 1px solid #EEE;
+   padding: 10px;
+   padding-top: 0px;
+}
+
+.calendarApp .grid1 .event-list {
+   padding: 10px;
+}
+
+.calendarApp .grid1 .create-event {
+   border: 1px solid #006edc;
+   color: #006edc;
+   background-color: #FFF;
+}
+
+.calendarApp .grid1 > .create-event:hover {
+   border: 1px solid #0055a9;
+   color: #0055a9;
+}
+
+.calendarApp .grid1 .sidebarDate {
+   justify-content: center;
+   text-align: center;
+   display: flex;
+   font-weight: 450;
+}
+
+.calendarApp .grid1 .event-list .event {
+   background-color: #006edc;
+   border-radius: 5px;
+   color: white;
+   padding: 0 5px;
+   margin: 3px 5px;
+}
+
+.calendarApp .grid2 {
+   /* margin: 0; */
+   /* padding: 0; */
+}
+
+.modal {
+   background-color: white;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   border: none;
+}
+
+.event-modal {
+   width: 500px;
+   height: 220px;
+}
+
+.login-modal {
+   width: 400px;
+   height: 390px;
+}
+
+.register-modal {
+   width: 400px;
+   height: 390px;
+}
+
+.modal .modal-header {
+   border-bottom: 1px solid #EEE;
+   padding: 15px;
+   font-weight: 1000px;
+   background-color: #006edc;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   color: white;
+}
+
+.modal .modal-body {
+   padding: 15px;
+   padding-right: 20px;
+   height: inherit;
+   flex-grow: 1;
+}
+
+.event-modal .modal-body input[type="text"] {
+   width: 100%;
+   margin-right: 15px; 
+   border: none;
+   transition: border 0.5s ease-out;
+   font-size: 17px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+
+.event-modal .modal-body input[type="text"].default {
+   border-bottom: 1px solid #EEE;
+}
+
+.event-modal .modal-body input[type="text"].error {
+   border-bottom: 1px solid red;
+}
+
+.event-modal .modal-body input[type="text"].default:focus {
+   outline: none;
+   border-bottom: 2px solid #006edc;
+}
+
+.event-modal .modal-body input[type="text"].error:focus {
+   outline: none;
+   border-bottom: 2px solid red;
+}
+
+.event-modal .modal-body input[type="date"] {
+   border: none;
+}
+
+.modal .modal-body .date {
+   width: 100%;
+   font-size: 17px;
+   margin-top: 10px;
+   border: none;
+}
+
+.modal .modal-body .save {
+   position: absolute;
+   bottom: 10px;
+   right: 10px;
+   background-color: #006edc;
+}
+
+.modal .modal-body .save:hover {
+   background-color: #0055a9;
+}
+
+.modal .modal-body .signin-form {
+   display: flex;
+   flex-direction: column;
+}
+
+.modal .inputbox label[class*="MuiFormLabel-focused-"]:not([class*="MuiFormLabel-error-"]) {
+   color: #006edc;
+}
+
+.modal .inputbox div[class^="MuiInputBase-focused-"]::after {
+   border-bottom: 2px solid #006edc;
+}
+
+.modal span[class*="MuiCheckbox-checked-"].inputbox {
+   color: #006edc;
+}
+
+.modal .modal-body .signin {
+   background-color: #006edc;
+   color: white;
+   margin-top: 20px;
+}
+
+.modal .modal-body .switch {
+   width: 80px;
+   margin-top: 10px;
+   color: #006edc;
+   background-color: white;
+   box-shadow: none;
+}
+
+.modal .modal-body .switch:hover {
+   background-color: #EEE;
+}
+
+.modal .modal-body .signin:hover {
+   background-color: #0055a9;
+}
+
+.main {
+   height: 100%;
+   width: 100%;
+}
+
+.loaderDiv {
+   width: 100%;
+   height: 100%;
+}
+
+.loaderDiv .loader {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   left: 0;
+   margin: auto;
+   width: 100px;
+   height: 100px;
+}
