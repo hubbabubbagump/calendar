@@ -44,7 +44,7 @@ const Events = new Schema({
 });
 
 //////////////////
-// MOCKGOOSE
+// MOCKGOOSE AND DB FUNCTIONS
 //////////////////
 
 if (mockDatabase) {
