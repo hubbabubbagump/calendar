@@ -18,13 +18,16 @@
     "react-dom": "^16.6.3",
     "react-scripts": "5.0.0",
     "react-spinners": "^0.4.8",
-    "uuid": "^3.3.2"
+    "uuid": "^3.3.2",
+    "@snyk/protect": "latest"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +45,9 @@
   },
   "proxy": "http://localhost:8080",
   "nodemonConfig": {
-    "ignore": ["src/*"]
-   }
+    "ignore": [
+      "src/*"
+    ]
+  },
+  "snyk": true
 }
